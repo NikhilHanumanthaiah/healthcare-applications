@@ -3,10 +3,10 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from typing import List
 
-from app.application.use_cases.add_medicine import AddMedicine
-from app.application.use_cases.get_all_medicines import GetAllMedicines
-from app.application.use_cases.update_medicine import UpdateMedicine
-from app.application.use_cases.delete_medicine import DeleteMedicine
+from app.application.use_cases.medicine.add_medicine import AddMedicine
+from app.application.use_cases.medicine.get_all_medicines import GetAllMedicines
+from app.application.use_cases.medicine.update_medicine import UpdateMedicine
+from app.application.use_cases.medicine.delete_medicine import DeleteMedicine
 from app.application.dto.medicine_dto import MedicineDTO,MedicineUpdateDTO
 from app.presentation.schemas.medicine_schema import MedicineCreate
 from app.infrastructure.repositories.medicine_repository import MedicineRepositoryImpl

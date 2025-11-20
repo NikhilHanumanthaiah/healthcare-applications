@@ -3,8 +3,8 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from typing import List
 
-from app.application.use_cases.create_bill import CreateBill
-from app.application.use_cases.get_all_bills import GetAllBills
+from app.application.use_cases.bill.create_bill import CreateBill
+from app.application.use_cases.bill.get_all_bills import GetAllBills
 from app.application.dto.bill_dto import BillDTO
 from app.presentation.schemas.bill_schema import BillCreate
 from app.infrastructure.repositories.bill_repository import BillRepositoryImpl
