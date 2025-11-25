@@ -1,0 +1,83 @@
+﻿
+============================================================
+  HEALTHCARE APPLICATION - PATIENT MODULE TEST SUITE
+============================================================
+
+============================================================
+  TEST 1: CREATE PATIENT
+============================================================
+
+Creating patient: Priya Sharma
+[PASS] Patient created successfully
+   Patient ID: 10fcfcd0-55c0-41e0-b1bb-ac829197d0fc
+   Name: Priya Sharma
+   Gender: Female
+   Email: priya.sharma@example.com
+   Phone: +91-9876529188
+
+============================================================
+  TEST 2: GET PATIENT BY ID
+============================================================
+
+Fetching patient: 10fcfcd0-55c0-41e0-b1bb-ac829197d0fc
+[PASS] Patient retrieved successfully
+   Name: Priya Sharma
+   Age: 29
+   Gender: Female
+   Email: priya.sharma@example.com
+
+============================================================
+  TEST 3: LIST ALL PATIENTS
+============================================================
+
+Fetching patient list...
+[PASS] Found 6 patients
+   1. Ravi Kumar - Unknown
+   2. Ravi Kumar - Male
+   3. Ravi Kumar - Male
+   4. Ravi Kumar - Male
+   5. Nikhil H - Male
+   ... and 1 more
+
+============================================================
+  TEST 4: UPDATE PATIENT
+============================================================
+
+Updating patient: 10fcfcd0-55c0-41e0-b1bb-ac829197d0fc
+   New email: priya.sharma.updated@example.com
+   New address: New Address: 100 MG Road, Bengaluru
+[PASS] Patient updated successfully
+   Email: priya.sharma.updated@example.com
+   Address: New Address: 100 MG Road, Bengaluru
+
+============================================================
+  TEST 5: DELETE PATIENT
+============================================================
+
+Deleting patient: 10fcfcd0-55c0-41e0-b1bb-ac829197d0fc
+[PASS] Patient deleted successfully
+
+============================================================
+  TEST 6: VERIFY DELETION
+============================================================
+
+Verifying patient 10fcfcd0-55c0-41e0-b1bb-ac829197d0fc is deleted...
+[PASS] Patient is no longer accessible (soft-deleted)
+
+============================================================
+  TEST SUMMARY
+============================================================
+
+   [PASS]  Create Patient
+   [PASS]  Get Patient
+   [PASS]  List Patients
+   [PASS]  Update Patient
+   [PASS]  Delete Patient
+   [PASS]  Verify Deletion
+
+   Total: 6/6 tests passed
+
+   SUCCESS! All tests passed! Patient module is fully functional!
+
+============================================================
+

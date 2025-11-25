@@ -1,0 +1,77 @@
+﻿
+============================================================
+  HEALTHCARE APPLICATION - PATIENT MODULE TEST SUITE
+============================================================
+
+============================================================
+  TEST 1: CREATE PATIENT
+============================================================
+
+Creating patient: Priya Sharma
+[PASS] Patient created successfully
+   Patient ID: d6f659cc-df63-40df-a9eb-2f5f2bf4e8f3
+   Name: Priya Sharma
+   Gender: Female
+   Email: priya.sharma@example.com
+   Phone: +91-9876543934
+
+============================================================
+  TEST 2: GET PATIENT BY ID
+============================================================
+
+Fetching patient: d6f659cc-df63-40df-a9eb-2f5f2bf4e8f3
+[PASS] Patient retrieved successfully
+   Name: Priya Sharma
+   Age: 29
+   Gender: Female
+   Email: priya.sharma@example.com
+
+============================================================
+  TEST 3: LIST ALL PATIENTS
+============================================================
+
+Fetching patient list...
+[FAIL] Status: 500
+
+============================================================
+  TEST 4: UPDATE PATIENT
+============================================================
+
+Updating patient: d6f659cc-df63-40df-a9eb-2f5f2bf4e8f3
+   New email: priya.sharma.updated@example.com
+   New address: New Address: 100 MG Road, Bengaluru
+[PASS] Patient updated successfully
+   Email: priya.sharma.updated@example.com
+   Address: New Address: 100 MG Road, Bengaluru
+
+============================================================
+  TEST 5: DELETE PATIENT
+============================================================
+
+Deleting patient: d6f659cc-df63-40df-a9eb-2f5f2bf4e8f3
+[PASS] Patient deleted successfully
+
+============================================================
+  TEST 6: VERIFY DELETION
+============================================================
+
+Verifying patient d6f659cc-df63-40df-a9eb-2f5f2bf4e8f3 is deleted...
+[PASS] Patient is no longer accessible (soft-deleted)
+
+============================================================
+  TEST SUMMARY
+============================================================
+
+   [PASS]  Create Patient
+   [PASS]  Get Patient
+   [FAIL]  List Patients
+   [PASS]  Update Patient
+   [PASS]  Delete Patient
+   [PASS]  Verify Deletion
+
+   Total: 5/6 tests passed
+
+   WARNING: 1 test(s) failed. Please review.
+
+============================================================
+
